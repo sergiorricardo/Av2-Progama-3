@@ -16,7 +16,7 @@ namespace Poder_Habito
             try
             {
                 conn = new MySqlConnection();
-                conn.ConnectionString = "SERVER=localhost;DATABASE=habitobd;user=root;password=";
+                conn.ConnectionString = "SERVER=aplicativo_db.mysql.dbaas.com.br;DATABASE=aplicativo_db;user=aplicativo_db;password=Sector@22";
                 conn.Open();
                 return conn;
             }
