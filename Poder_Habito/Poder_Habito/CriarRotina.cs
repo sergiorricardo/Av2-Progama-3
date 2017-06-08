@@ -9,7 +9,7 @@ namespace Poder_Habito
     {
         public bool logado = false;
         private Conexao conn;
-        private MySqlConnection ConnectOpen;
+        public static MySqlConnection ConnectOpen;
         public CriarRotina()
         {
             InitializeComponent();
@@ -54,14 +54,20 @@ namespace Poder_Habito
                     command.ExecuteNonQuery();
 
                     MessageBox.Show("Cadastrado com sucesso");
-                    Hide();
+                    
+                   
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Erro ao cadastrar" + ex);
                     throw;
                 }
-
+                cmbDia.Text = " ";
+                txtAtividade.Clear();
+                txtHrIn.Text = "HH";
+                txtHrTerm.Text = "HH";
+                txtMmIni.Text = "MM";
+                txtMmTer.Text = "MM";
             }
             
         }
