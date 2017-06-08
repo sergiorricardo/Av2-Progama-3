@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Poder_Habito
 {
-    public partial class Form1 : Form
+    public partial class Alterar_Excluir : Form
     {
-        public Form1()
+        public Alterar_Excluir()
         {
             InitializeComponent();
         }
